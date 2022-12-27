@@ -1,0 +1,12 @@
+.container{
+  margin: auto;
+  width: 50%;
+  border: 1px solid #73ad21;
+  background-color: #32746a;
+  padding: 10px;
+}
+.add-btn{
+  float: right;
+  background-color: #ff0000;
+  color: #ffffff;
+}
