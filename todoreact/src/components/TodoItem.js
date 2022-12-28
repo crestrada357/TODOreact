@@ -6,7 +6,8 @@ export default function TodoItem({todo, onComplete, onDeleteItem}) {
             textDecoration: todo.completed? 'line-through':'none',
             margin: '20px',
             border: '1px solid #ffffff',
-            backgroundColor: '#ccf7e3'
+            backgroundColor: '#00aaaa',
+            borderRadius: '3px'
         }
     }
     return (
@@ -14,7 +15,7 @@ export default function TodoItem({todo, onComplete, onDeleteItem}) {
                 <input type="checkbox" checked={todo.completed}
                 onChange={()=>onComplete(todo.id)}/>
                 {todo.task}
-                <button className="add-btn" onClick={()=>onDeleteItem(todo.id)}>X</button>
+                <button className="del-btn" onClick={()=>onDeleteItem(todo.id)}>X</button>
         </div>
   )
 }
